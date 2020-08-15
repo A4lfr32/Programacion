@@ -1,0 +1,234 @@
+<!DOCTYpreE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpreort" content="width=device-width, initial-scale=1.0">
+    <title>Guia</title>
+</head>
+<body>
+    <h1>Variables</h1>
+    <pre>var <b>carName</b> = "Volvo"</pre>
+    <pre>var <b>x</b> = 50</pre>
+    <pre>var <b>x</b> = 5</pre>
+    <pre>var <b>y</b> = 10</pre>
+    <pre>document.getElementById("demo").innerHTML = x+y;</pre>
+    <pre>var <b>x</b> = 5</pre>
+    <pre>var <b>y</b> = 10</pre>
+    <pre>var <b>z</b>= x + y</pre>
+    <pre>alert(z)</pre>
+    <pre>firstName = "John"</pre>
+    <pre>lastName = "Doe"</pre>
+    <pre>age = 35</pre>
+    <pre>var firstName="John",lastName="Doe",age=35;</pre>
+
+    <h1>Operadores</h1>
+    <pre>alert(10*5); //multiprely</pre>
+    <pre>alert(10/5); //dividir</pre>
+    <pre>alert(10%5); //remainder</pre>
+    <pre>x+=y;</pre>
+    <pre>x*=y;</pre>
+    <h1>Tipos de datos</h1>
+    <pre>var length = 16;          // number</pre>
+    <pre>var lastName = "Johnson"; // String</pre>
+    <pre>var x = {
+        firstName: "John",
+        lastName: "Doe"
+    };</pre>
+    <h1>Funciones</h1>
+    <pre>function myFunction() {
+        alert("Hello World!");
+      }
+myFunction();</pre>
+    <pre>funtion myFunction(){
+        alert("Hello World!");
+    }
+    </pre>
+    <pre>function myFunction() {
+  
+        return
+         "Hello";
+        }
+    document.getElementById("demo").innerHTML = myFunction();</pre>
+    <pre>function myFunction() {
+        document.
+      getElementById
+      ("demo").
+      innerHTML
+       = "Hello";
+      }</pre>
+    <h1>Objetos</h1>
+    <pre>var person = {
+        firstName: "John",
+        lastName: "Doe"
+      };
+      alert(person.firstName);</pre>
+      <pre>var person = {
+        firstName: "John",
+        lastName: "Doe",
+      country: "Norway"
+      
+      };</pre>
+      <pre>var person =
+         {
+          name:"John", age:50
+        };
+        alert(person.name+ " is " + person.age);</pre>
+    <h1>Eventos</h1>
+    <pre><button onclick="alert('Hello')">Click me.</button></pre>
+    <pre><button onclick="myFunction()">Click me.</button></pre>
+    <pre><div onmouseover="this.style.backgroundColor='red'">myDIV.</div></pre>
+    <h1>Strings</h1>
+    <pre>var txt = "Hello World!";
+        var x = txt.length;
+        alert(x);</pre>
+    <pre>var txt = "We are \"Vikings\"";
+        alert(txt);</pre>
+    <pre>var str1 = "Hello ";
+        var str2 = "World!";
+        alert(str1+str2);</pre>
+    <h1>String Methods</h1>
+    <pre>var txt = "abcdefghijklm";
+        var pos = txt.indexOf("h");</pre>
+    <pre>var txt = "I can eat bananas all day";
+        var x = txt.slice(10, 17);</pre>
+    <pre>var txt = "Hello World";
+        txt = txt.replace("Hello", "Welcome");</pre>
+    <pre>var txt = "Hello World";
+        txt = txt.toUpperCase();</pre>
+    <pre>var txt = "Hello World";
+        txt = txt.toLowerCase();</pre>
+    <h1>Arrays</h1>
+    <pre>var cars = ["Saab", "Volvo", "BMW"];
+    var x = cars[1];</pre>
+    <pre>var cars = ["Volvo", "Jeep", "Mercedes"];
+    cars[0]= "Ford";</pre>
+    <pre>var cars = ["Volvo", "Jeep", "Mercedes"];
+        alert(cars.length);</pre>
+    <h1>Arrays methods</h1>
+    <pre>var fruits = ["Banana", "Orange", "Apple"];
+        fruits.pop();</pre>
+    <pre>var fruits = ["Banana", "Orange", "Apple"];
+        fruits.push("Kiwi");</pre>
+    <pre>var fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+        fruits.splice(1, 2);</pre>
+    <h1>Array sort</h1>
+    <pre>var fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+        fruits.sort();</pre>
+    <h1>Dates</h1>
+    <pre>var d = new Date();
+        alert(d);</pre>
+    <pre>var d = new Date();
+        year = d.getFullYear();</pre>
+    <pre>var d = new Date();
+        month = d.getMonth();</pre>
+    <pre>var d = new Date();
+        d.setFullYear(2020);</pre>
+    <h1>Random</h1>
+    <pre>var r = Math.random();</pre>
+    <pre>var x = Math.max(10, 20);</pre>
+    <pre>var x = Math.round(5.3);</pre>
+    <pre>var x = Math.sqrt(9);</pre>
+    <h1>Comparisons</h1>
+    <pre>x = 10;
+        y = 5;
+        alert(x >y);</pre>
+    <pre>x = 10;
+        y = 10;
+        alert(x ==y);</pre>
+    <pre>x = 10;
+        y = 5;
+        alert(x !=y);</pre>
+    <pre>var age = n;
+        var voteable = (age <18) ?"Too young" :"Old enough";
+        alert(voteable);</pre>
+    <pre>if (x > y) {
+          alert("Hello World");
+        }
+        </pre>
+    <pre>
+        if (x > y) {
+          alert("Hello World");
+        } else
+         {
+          alert("Goodbye");
+        }</pre>
+    <pre>switch
+        (fruits) {
+        case "Banana":
+            alert("Hello")
+            break;
+        case "Apple":
+            alert("Welcome")
+            break;    
+        }</pre>
+    <pre>switch(fruits) {
+        case "Banana":
+          alert("Hello")
+          break;
+        case "Apple":
+          alert("Welcome")
+          break;
+        default:
+          alert("Neither");
+      }</pre>
+    <h1>For Loops</h1>
+    <pre>var i;
+        for (i = 0; i < 10; i++) {
+          console.log(i);
+        }</pre>
+    <pre>var fruits = ["Apple", "Banana", "Orange"];
+        for (x in fruits) {
+          console.log(x);
+        }</pre>
+    <h1>While</h1>
+    <pre>var i = 0;
+        while (i < 10) {
+          console.log(i);
+          i++
+        }</pre>
+    <pre>var i = 0;
+        while (i < 10) {
+          console.log(i);
+        i = i +2;
+        }</pre>
+    <h1>Break Loops</h1>
+    <pre>for (i = 0; i < 10; i++) {
+        console.log(i);
+        if (i == 5) {
+          break;
+        }
+      }</pre>
+    <pre>for (i = 0; i < 10; i++) {
+        if (i == 5) {
+      continue;
+        }
+        console.log(i);
+      }</pre>
+    <h1>HTML DOM</h1>
+    <pre><p id="demo"></p>
+        <script>
+        document.getElementById("demo").innerHTML= "Hello";
+        document.getElementsByTagName("p")[0].innerHTML= "Hello";
+        document.getElementsByClassName("test")[0].innerHTML = "Hello";
+        </script></pre>
+    <pre><img id="image" src="smiley.gif">
+
+        <script>
+        document.getElementById("image").src = "pic_mountain.jpg";
+        </script></pre>
+    <pre><input type="text" id="myText" value="Hello">
+
+        <script>
+        document.getElementById("myText").value = "Have a nice day!";
+        document.getElementById("demo").style.color= "red";
+        document.getElementById("demo").style.fontSize= "40px";
+        document.getElementById("demo").style.display = "none";
+        </script></pre>
+    <pre><button id="demo">Click me1</button>
+
+        <script>document.getElementById("demo").addEventListener("click", myFunction);
+        </script></pre>
+    <h1>Es6</h1>
+
+</body>
+</html>
