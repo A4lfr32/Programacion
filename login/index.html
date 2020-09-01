@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        .login-box {
+            width: 320px;
+            height: 420px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            padding: 30px 30px;
+            border: groove;
+            border-radius: 20px;
+        }
+
+        .login-box .avatar {
+            /* width: 100px; */
+            /* height: 100px; */
+            /* border-radius: 50%; */
+            /* border: solid; */
+            position: absolute;
+            top: calc(-50% + 91px);
+            left: calc(50% - 100px);
+        }
+
+        .login-box h1 {
+            margin: 0;
+            padding: 20px 0 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .login-box label {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .login-box input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .login-box input:not([type="submit"]) {
+            border:none;
+            border-bottom-style: groove;
+            outline: none;
+            font-size: 16px;
+            height: 40px;
+        }
+
+        .login-box input:not([type="submit"]):focus {
+            border-bottom-style: solid;
+        }
+
+        .login-box input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: cadetblue;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 12px;
+            line-height: 20px;
+            color: black;
+            margin: 3px;
+        }
+
+        a:hover {
+            color: darkslategrey;
+            border-left-style: groove;  
+            margin: 0px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Login here</h1>
+        <form action="">
+            <!-- LOGO -->
+            <img class="avatar" src="logo.png" alt="">
+            <!-- USERNAME -->
+            <label for="username">Username</label>
+            <input type="text" placeholder="Enter Username">
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter Password">
+
+            <input type="submit" name="Log in" id="Log in">
+
+            <a href="#">Lost your password?</a><br>
+            <a href="#">Don't have an account?</a>
+        </form>
+    </div>
+</body>
+</html>

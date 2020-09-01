@@ -1,0 +1,14 @@
+Acoplar botones de seguridad (alfredo)
+Instalar Stall Torque, soldar pin puente H (jacobo) 
+Arreglar cableado, soldar cable suelto y poner todo en modulo A (valentin)
+
+Generar trayectoria de la competencia (Valentin)
+implimentar csv en labview (Jacobo)
+Homing (Jacobo)
+Diseño e Implementación de controaldor (en cascada) o (en polinomico) (Alfredo)
+Diseño de controlador en espacio de estado (Jueves 4) (Alfredo)
+Implementación labview de espacio de estados (Valentin)
+
+
+Bono: grabar movimiento.
+Redacción informe
