@@ -29,23 +29,25 @@
   <head>
     <meta charset="utf-8">
     <title>Login</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
-  <body>
+  <body class="flex-container" style="overflow-x: hidden;">
     <?php require 'partials/header.php' ?>
-    
+
     <?php if(!empty($message)): ?>
       <p> <?= $message ?></p>
     <?php endif; ?>
-
-    <h1>Ingresar</h1>
-    
-    <form action="./login.php" method="POST">
-      <input name="email" type="text" placeholder="Engrese su correo">
-      <input name="password" type="password" placeholder="Ingrese su contraseña">
-      <input type="submit" value="Ingresar ya">
-    </form>
-  <span>¿No tienes cuenta? <a href="./signup.php">Crearme una cuenta</a></span>
+    <div style="text-align: center;">
+      <h1>Ingresar</h1>
+      
+      <form action="./login.php" method="POST">
+        <input name="email" type="text" placeholder="Engrese su correo">
+        <input name="password" type="password" placeholder="Ingrese su contraseña">
+        <input type="submit" value="Ingresar ya">
+      </form>
+    <span>¿No tienes cuenta? <a href="./signup.php">Crearme una cuenta</a></span>
+    </div>
   </body>
 </html>
